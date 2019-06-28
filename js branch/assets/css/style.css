@@ -90,3 +90,17 @@ li:hover span{
   box-shadow: 0 0 3px rgba(0,0,0,0.1);
 
 }
+
+.toggle-content {
+	display: none;
+	height: 0;
+  opacity: 0;
+	overflow: hidden;
+	transition: height 1s ease-in-out, opacity 0.1s ease-in-out;
+}
+
+.toggle-content.is-visible {
+	display: block;
+	height: auto;
+  opacity: 1;
+}
